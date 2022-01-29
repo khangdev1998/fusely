@@ -1,0 +1,112 @@
+.footer {
+  padding: 224px 0 41px;
+  background-color: $secondary-color;
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 100px;
+    max-width: 900px + 30;
+    padding-inline: 15px;
+    margin-inline: auto;
+  }
+  &-column__title {
+    color: $dark-color;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  &-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+  }
+  &-list__link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 162%;
+    color: #717082;
+  }
+  &-column__social {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    a {
+      background-color: $light-color;
+      padding: 9px 12px;
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    padding-bottom: 20px;
+    &-container {
+      gap: 0 20px;
+    }
+  }
+  @media only screen and (max-width: 599px) {
+    &-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 20px;
+    }
+  }
+  @media (hover: hover) {
+    &-list__link {
+      transition: all 0.4s ease;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    &-column__social {
+      a {
+        transition: 0.2s linear;
+        &:hover {
+          background-color: $primary-color;
+          img {
+            filter: brightness(10);
+          }
+        }
+      }
+    }
+  }
+}
+.copyright {
+  padding-top: 78px;
+  &__container {
+    max-width: $container-first + 30;
+    padding-inline: 15px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img {
+    width: 60px;
+    height: 23px;
+  }
+  &__dev {
+    font-size: 14px;
+    font-weight: 500;
+    color: $gray-color;
+    text-decoration: none;
+    i {
+      color: pink;
+    }
+  }
+  @media only screen and (max-width: 1279px) {
+    &__container {
+      max-width: 900px + 30;
+    }
+  }
+  @media only screen and (max-width: 599px) {
+    padding-top: 68px;
+  }
+  @media (hover: hover) {
+    &__dev {
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

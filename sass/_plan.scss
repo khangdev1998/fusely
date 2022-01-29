@@ -1,0 +1,86 @@
+.plan {
+  padding-top: var(--spacing-section);
+  text-align: center;
+  &-list {
+    padding-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 45px;
+  }
+  &-items {
+    padding: 46px 82px;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+  }
+  &-items__price {
+    padding-block: 30px;
+    color: $dark-color;
+    line-height: 112%;
+    span:first-child {
+      font-weight: 700;
+      font-size: 50px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+  &-items__main {
+    display: flex;
+    flex-direction: column;
+    gap: 14px 0;
+    padding-bottom: 30px;
+  }
+  &-btn {
+    padding-inline: 0;
+    margin-inline: auto;
+    width: 140px;
+    transition: 0.4s ease-out;
+  }
+  @media only screen and (max-width: 1279px) {
+    &-items {
+      padding-inline: 25px;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    &-list {
+      padding-top: 90px;
+      grid-template-columns: 100%;
+      grid-gap: 45px 0;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    &-list {
+      padding-top: 40px;
+    }
+    &-items__price span:first-child {
+      font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 374px) {
+    &-items {
+      padding-inline: 20px;
+    }
+  }
+  @media (hover: hover) {
+    &-items {
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: $primary-color;
+        transform: scaleY(1.2);
+      }
+      &:hover span {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      &:hover .plan-btn {
+        background-color: $light-color;
+        border: none;
+        width: 186px;
+      }
+    }
+  }
+}

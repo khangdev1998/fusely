@@ -1,0 +1,54 @@
+.customer {
+  padding-top: var(--spacing-section);
+  &__container {
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    left: -3rem;
+    top: -2rem;
+    z-index: -10;
+  }
+  &-quote {
+    padding-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(3, 44%);
+    grid-gap: 0 45px;
+    transform: translateX(-18%);
+  }
+  &-quote__items {
+    padding: 80px;
+    background-color: $secondary-color;
+    color: $gray-color;
+    font-weight: 400;
+    span {
+      line-height: 162%;
+      font-weight: 400;
+      padding-top: 40px;
+      display: block;
+    }
+  }
+  &-quote__items-desc {
+    font-size: 22px;
+    line-height: 155%;
+    font-style: italic;
+  }
+  &-move {
+    padding-top: 80px;
+    display: flex;
+    gap: 0 12px;
+    position: relative;
+    left: 50%;
+    span {
+      background: rgba(207, 207, 222, 0.5);
+      width: 12px;
+      height: 12px;
+      border-radius: 100rem;
+      cursor: pointer;
+      transition: 0.2s linear;
+      &:hover {
+        background: $dark-color;
+      }
+    }
+  }
+}
