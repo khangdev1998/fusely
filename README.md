@@ -1,6 +1,6 @@
 # fusely
 
-Giao diện được cắt từ figma sử dụng các ngôn ngữ HTML,CSS,JAVASCRIPT,SASS
+Giao diện được cắt từ Figma sử dụng các ngôn ngữ HTML,CSS,JAVASCRIPT,SASS
 
 **_Preview Website:_** https://khangdev1998.github.io/fusely/ <br>
 _**Download Template:**_ https://www.figma.com/community/file/1046774226276680836
