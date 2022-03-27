@@ -1,3 +1,8 @@
 # fusely
 
-![qssdsd](https://user-images.githubusercontent.com/79825633/160268448-f706363a-3304-4e6f-96ff-ea8c8d2ca9a2.png)
+Giao diện được cắt từ figma sử dụng các ngôn ngữ HTML,CSS,JAVASCRIPT,SASS
+
+Preview Website: https://khangdev1998.github.io/heyu/
+Download Template: https://www.figma.com/community/file/1046774226276680836
+
+![fusely](https://user-images.githubusercontent.com/79825633/160268565-d0f42cfb-e732-4773-9bcb-f4956da06f6f.png)
